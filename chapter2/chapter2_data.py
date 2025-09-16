@@ -1,7 +1,31 @@
+
+# ファイルを読み取れるように
+from pathlib import Path
+import pandas as pd
+
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / "data" / "adult_income_dataset.csv"
+
+df = pd.read_csv(CSV_PATH)
+
+# 先頭5行を表示
+print("===== head() =====")
+print(df.head())
+
+# データの基本情報を表示
+print("\n===== info() =====")
+print(df.info())
+
+# 統計情報を表示
+print("\n===== describe() =====")
+print(df.describe())
+
+
+
 # %% 2-01 ファイルからデータを読み込む
 import pandas as pd
 
-df = pd.read_csv("adult_income_dataset.csv")
+df = pd.read_csv("date/adult_income_dataset.csv")
 df
 
 # 2-02 データフレームの基本情報を確認する
