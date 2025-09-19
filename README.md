@@ -12,7 +12,15 @@
 ### Chapter2 基本の流れを抑える分析フロー
 - CSVファイルの読み込み（pandas）
 - DataFrameの基本操作（head, info, describe）
-- 分析の基本的な流れを理解する
+- 行・列の抽出、条件での絞り込み
+- ソート（単一列・複数列）
+- 欠損値処理（isnull, dropna）
+- グルーピング（例: 性別ごとの平均年齢）
+
+#### 実行例
+```bash
+python chapter2/chapter2_data.py
+```
 
 ### Chapter3 分析前の下処理するデータ加工
 - データのクリーニング（欠損値処理、重複削除）
